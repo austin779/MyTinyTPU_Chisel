@@ -1,0 +1,19 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/deiwuai/MyTinyTPU/target/scala-2.12/chisel-tutorial_2.12-3.3.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PEMain.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/deiwuai/MyTinyTPU/target/scala-2.12/classes/PEMain.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MMU$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/deiwuai/MyTinyTPU/target/scala-2.12/classes/MMU$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PE.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/deiwuai/MyTinyTPU/target/scala-2.12/classes/PE.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PEMain$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/deiwuai/MyTinyTPU/target/scala-2.12/classes/PEMain$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PEMain$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/deiwuai/MyTinyTPU/target/scala-2.12/classes/PEMain$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PE$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/deiwuai/MyTinyTPU/target/scala-2.12/classes/PE$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MMU$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/deiwuai/MyTinyTPU/target/scala-2.12/classes/MMU$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MMU.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/deiwuai/MyTinyTPU/target/scala-2.12/classes/MMU.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

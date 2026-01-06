@@ -1,0 +1,449 @@
+$date
+2026-01-06T18:35+0000
+$end
+$version
+0.2
+$end
+$comment
+
+$end
+$timescale 1ns  $end
+$scope module MMU $end
+ $var wire 8 % io_col_in_1 $end
+ $var wire 16 & io_acc_out_1 $end
+ $var wire 1 + pes_0_0 $end
+ $var wire 16 7 io_acc_out_0 $end
+ $var wire 8 9 io_col_in_0 $end
+ $var wire 1 ; pes_1_1 $end
+ $var wire 1 < io_en_capture_cols_1 $end
+ $var wire 1 @ clock $end
+ $var wire 8 E io_row_in_1 $end
+ $var wire 8 L io_row_in_0 $end
+ $var wire 1 N pes_0_1 $end
+ $var wire 1 P pes_1_0 $end
+ $var wire 1 R io_en_capture_cols_0 $end
+ $var wire 1 T reset $end
+ $var wire 1 W io_en_weight_pass $end
+  $scope module pes_1_0 $end
+   $var wire 16 ( out_psum_reg $end
+   $var wire 1 , reset $end
+   $var wire 1 . io_en_weight_pass $end
+   $var wire 8 0 io_in_act $end
+   $var wire 8 4 out_act_reg $end
+   $var wire 16 F io_out_psum $end
+   $var wire 8 J io_out_act $end
+   $var wire 8 M weight_reg $end
+   $var wire 16 Q io_in_psum $end
+   $var wire 1 U clock $end
+   $var wire 1 X io_en_weight_capture $end
+  $upscope $end
+  $scope module pes_1_1 $end
+   $var wire 1 " reset $end
+   $var wire 8 ' out_act_reg $end
+   $var wire 1 - io_en_weight_capture $end
+   $var wire 8 1 weight_reg $end
+   $var wire 8 5 io_in_act $end
+   $var wire 16 6 io_in_psum $end
+   $var wire 8 : io_out_act $end
+   $var wire 1 = clock $end
+   $var wire 16 C io_out_psum $end
+   $var wire 1 V io_en_weight_pass $end
+   $var wire 16 [ out_psum_reg $end
+  $upscope $end
+  $scope module pes_0_0 $end
+   $var wire 16 ! io_out_psum $end
+   $var wire 16 # io_in_psum $end
+   $var wire 8 $ io_out_act $end
+   $var wire 1 ) io_en_weight_pass $end
+   $var wire 1 * clock $end
+   $var wire 8 3 io_in_act $end
+   $var wire 16 8 out_psum_reg $end
+   $var wire 8 A out_act_reg $end
+   $var wire 1 D io_en_weight_capture $end
+   $var wire 1 I reset $end
+   $var wire 8 Y weight_reg $end
+  $upscope $end
+  $scope module pes_0_1 $end
+   $var wire 16 / out_psum_reg $end
+   $var wire 1 2 reset $end
+   $var wire 8 > weight_reg $end
+   $var wire 8 ? out_act_reg $end
+   $var wire 16 B io_in_psum $end
+   $var wire 8 G io_out_act $end
+   $var wire 8 H io_in_act $end
+   $var wire 1 K io_en_weight_capture $end
+   $var wire 1 O io_en_weight_pass $end
+   $var wire 1 S clock $end
+   $var wire 16 Z io_out_psum $end
+  $upscope $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+0X
+0;
+b00000000 M
+b00000000 E
+b00000000 0
+0R
+0=
+b0000000000000000 B
+b00000000 G
+0T
+0"
+b00000000 A
+b0000000000000000 [
+0V
+0N
+b0000000000000000 !
+0P
+b0000000000000000 8
+b0000000000000000 #
+0-
+b00000000 ?
+b0000000000000000 Q
+0D
+b00000000 9
+b00000000 $
+b0000000000000000 6
+0)
+b00000000 3
+0@
+0+
+b00000000 J
+b00000000 5
+0W
+b00000000 L
+0<
+b00000000 1
+0S
+b0000000000000000 C
+b0000000000000000 &
+b00000000 H
+b0000000000000000 Z
+0U
+b0000000000000000 (
+b00000000 %
+0O
+02
+b00000000 Y
+b00000000 '
+0I
+b00000000 >
+0K
+0.
+b00000000 :
+b0000000000000000 7
+b0000000000000000 /
+0*
+b00000000 4
+b0000000000000000 F
+0,
+$end
+#0
+1T
+1"
+12
+1I
+1,
+#1
+1U
+1@
+1S
+1*
+1=
+#6
+0T
+0"
+0U
+0@
+02
+0S
+0*
+0=
+0I
+0,
+#11
+1U
+1@
+1S
+1*
+1=
+#16
+b0000000000000001 B
+b00000001 %
+1X
+1.
+1R
+1D
+0S
+0=
+1)
+0U
+0@
+1V
+0*
+1W
+1O
+#21
+1U
+1@
+1S
+1*
+b0000000000000001 Z
+b0000000000000001 6
+1=
+b0000000000000001 /
+#26
+b0000000000000000 B
+1-
+1<
+b00000000 %
+0U
+0@
+b0000000000000001 #
+0S
+0*
+b00000001 9
+1K
+0=
+#31
+b0000000000000001 Q
+b0000000000000001 C
+b0000000000000001 &
+b00000001 Y
+1S
+b0000000000000000 Z
+b0000000000000000 6
+1=
+b0000000000000001 [
+b0000000000000000 /
+b0000000000000001 !
+b00000001 1
+1@
+1U
+b0000000000000001 8
+1*
+#36
+0X
+0U
+0@
+0R
+0D
+0S
+0*
+0=
+#41
+b0000000000000001 F
+b0000000000000000 C
+1@
+b00000000 1
+1U
+b0000000000000000 &
+1S
+1*
+1=
+b0000000000000001 (
+b0000000000000000 [
+b0000000000000001 7
+#46
+0-
+0<
+0.
+0S
+0K
+0=
+0)
+0U
+0@
+b0000000000000000 #
+0V
+0*
+b00000000 9
+0W
+0O
+#51
+b0000000000000000 !
+b0000000000000000 Q
+1U
+1@
+b0000000000000000 8
+1S
+1*
+1=
+#56
+0U
+0@
+0S
+0*
+0=
+#61
+b0000000000000000 F
+1U
+1@
+1S
+1*
+1=
+b0000000000000000 (
+b0000000000000000 7
+#66
+b00000101 3
+0U
+0@
+0S
+0*
+0=
+b00000101 L
+#71
+b0000000000000101 !
+b0000000000000101 Q
+1U
+1@
+b0000000000000101 8
+1S
+1*
+b00000101 $
+b00000101 H
+1=
+b00000101 A
+#76
+b00000110 3
+b00000111 0
+0U
+0@
+0S
+0*
+b00000111 E
+0=
+b00000110 L
+#81
+b0000000000000110 Q
+b00000111 4
+b00000111 J
+b00000111 5
+1S
+1=
+b0000000000000101 (
+b0000000000000101 7
+b0000000000000110 !
+b00000101 ?
+b0000000000000101 F
+1U
+1@
+b0000000000000110 8
+b00000101 G
+1*
+b00000110 $
+b00000110 H
+b00000110 A
+#86
+b00000000 3
+b00001000 0
+0U
+0@
+0S
+0*
+b00001000 E
+0=
+b00000000 L
+#91
+b0000000000000000 Q
+b00001000 4
+b00001000 J
+b00001000 5
+1S
+b00000111 '
+1=
+b0000000000000110 (
+b0000000000000110 7
+b0000000000000000 !
+b00000110 ?
+b0000000000000110 F
+1U
+1@
+b0000000000000000 8
+b00000110 G
+1*
+b00000000 $
+b00000000 H
+b00000111 :
+b00000000 A
+#96
+b00000000 0
+0U
+0@
+0S
+0*
+b00000000 E
+0=
+#101
+b00000000 4
+b00000000 J
+b00000000 5
+1S
+b00001000 '
+1=
+b0000000000000000 (
+b0000000000000000 7
+b00000000 ?
+b0000000000000000 F
+1U
+1@
+b00000000 G
+1*
+b00001000 :
+#106
+0U
+0@
+0S
+0*
+0=
+#111
+1U
+1@
+1S
+1*
+b00000000 '
+1=
+b00000000 :
+#116
+0U
+0@
+0S
+0*
+0=
+#121
+1U
+1@
+1S
+1*
+1=
+#126
+0U
+0@
+0S
+0*
+0=
+#131
+1U
+1@
+1S
+1*
+1=
+#136
+0U
+0@
+0S
+0*
+0=
+#141
+1U
+1@
+1S
+1*
+1=
+#146
+0U
+0@
+0S
+0*
+0=

@@ -1,5 +1,6 @@
 import chisel3._
 import chisel3.util._
+import chisel3.stage.ChiselStage
 //MMU: 2x2 PE Array
 
 class MMU(val rows: Int = 2, val cols: Int = 2) extends Module {
@@ -52,4 +53,13 @@ class MMU(val rows: Int = 2, val cols: Int = 2) extends Module {
  // Connect index 'c' of acc_out to the PE at the last row, column 'c'
 for (c <- 0 until cols) {
   io.acc_out(c) := pes(rows - 1)(c).io.out_psum
+}
+}
+
+
+
+object MMUMain extends App {
+  println("Generating Verilog for MMU...")
+  // 這裡生成 2x2 的 MMU
+  (new ChiselStage).emitVerilog(new MMU(rows = 2, cols = 2), Array("--target-dir", "generated"))
 }
