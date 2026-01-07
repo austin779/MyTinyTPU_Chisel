@@ -1,0 +1,75 @@
+$date
+2026-01-06T22:17+0000
+$end
+$version
+0.2
+$end
+$comment
+
+$end
+$timescale 1ns  $end
+$scope module DualWeightFIFO $end
+ $var wire 8 ! queue1_3 $end
+ $var wire 8 " col1_out_reg $end
+ $var wire 1 # io_push_col1 $end
+ $var wire 8 $ io_data_in $end
+ $var wire 2 % rd_ptr1 $end
+ $var wire 8 & queue1_2 $end
+ $var wire 1 ' io_pop $end
+ $var wire 8 ( queue0_3 $end
+ $var wire 2 ) wr_ptr1 $end
+ $var wire 8 * io_col1_out $end
+ $var wire 8 + queue0_0 $end
+ $var wire 2 , wr_ptr0 $end
+ $var wire 2 - rd_ptr0 $end
+ $var wire 1 . io_push_col0 $end
+ $var wire 8 / queue1_1 $end
+ $var wire 1 0 clock $end
+ $var wire 8 1 io_col1_raw $end
+ $var wire 8 2 queue0_2 $end
+ $var wire 1 3 reset $end
+ $var wire 8 4 queue1_0 $end
+ $var wire 8 5 queue0_1 $end
+ $var wire 8 6 io_col0_out $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+b00000000 (
+b00000000 /
+b00000000 !
+0'
+0.
+b00000000 "
+b00000000 1
+b00 )
+b00000000 2
+b00000000 *
+00
+b00000000 $
+b00000000 +
+0#
+b00 %
+b00000000 4
+b00 ,
+b00000000 &
+b00000000 5
+b00 -
+03
+b00000000 6
+$end
+#0
+13
+#1
+10
+#6
+13
+00
+#11
+10
+#16
+00
+#21
+10
+#26
+03
+00

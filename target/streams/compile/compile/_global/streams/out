@@ -1,4 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/main/scala/mmu.scala:54:1: Missing closing brace `}' assumed here[0m
-[0m[[0m[31merror[0m] [0m[0mfor (c <- 0 until cols) {[0m
-[0m[[0m[31merror[0m] [0m[0m^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/main/scala/test_DualWeightFIFO.scala:4:7: AccumulatorMem is already defined as class AccumulatorMem[0m
+[0m[[0m[31merror[0m] [0m[0mclass AccumulatorMem(val bypassReadNew: Boolean = true) extends Module {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/main/scala/test_DualWeightFIFO.scala:110:8: AccumulatorMemMain is already defined as object AccumulatorMemMain[0m
+[0m[[0m[31merror[0m] [0m[0mobject AccumulatorMemMain extends App {[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

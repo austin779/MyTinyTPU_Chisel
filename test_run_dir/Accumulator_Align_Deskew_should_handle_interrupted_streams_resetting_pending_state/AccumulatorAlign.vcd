@@ -1,0 +1,109 @@
+$date
+2026-01-06T22:16+0000
+$end
+$version
+0.2
+$end
+$comment
+
+$end
+$timescale 1ns  $end
+$scope module AccumulatorAlign $end
+ $var wire 1 ! pending $end
+ $var wire 1 " io_aligned_valid $end
+ $var wire 16 # align_col0_reg $end
+ $var wire 16 $ io_align_col1 $end
+ $var wire 1 % clock $end
+ $var wire 16 & align_col1_reg $end
+ $var wire 16 ' col0_delay_reg $end
+ $var wire 16 ( io_align_col0 $end
+ $var wire 16 ) io_raw_col1 $end
+ $var wire 16 * io_raw_col0 $end
+ $var wire 1 + reset $end
+ $var wire 1 , io_valid_in $end
+ $var wire 1 - aligned_valid_reg $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+0%
+0"
+b0000000000000000 '
+b0000000000000000 $
+b0000000000000000 (
+0-
+b0000000000000000 )
+0+
+0,
+b0000000000000000 &
+0!
+b0000000000000000 #
+b0000000000000000 *
+$end
+#0
+1+
+#1
+1%
+#6
+0%
+0+
+#11
+1%
+#16
+0%
+b0000000000110111 *
+1,
+#21
+1!
+1%
+b0000000000110111 '
+#26
+0%
+b0000000000000000 *
+b0000000001000010 )
+#31
+1-
+1%
+1"
+b0000000001000010 &
+b0000000000110111 #
+b0000000000000000 '
+b0000000001000010 $
+b0000000000110111 (
+#36
+0%
+0,
+#41
+0!
+0-
+1%
+0"
+#46
+0%
+#51
+1%
+#56
+0%
+b0000000001001101 *
+1,
+b0000000001100011 )
+#61
+1!
+1%
+b0000000001001101 '
+#66
+0%
+b0000000000000000 *
+b0000000001011000 )
+#71
+1-
+1%
+1"
+b0000000001011000 &
+b0000000001001101 #
+b0000000000000000 '
+b0000000001011000 $
+b0000000001001101 (
+#76
+0%
+0,
+b0000000000000000 )

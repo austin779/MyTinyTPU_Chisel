@@ -60,6 +60,6 @@ for (c <- 0 until cols) {
 
 object MMUMain extends App {
   println("Generating Verilog for MMU...")
-  // 這裡生成 2x2 的 MMU
+  // generate verilog code of 2x2 MMU
   (new ChiselStage).emitVerilog(new MMU(rows = 2, cols = 2), Array("--target-dir", "generated"))
 }

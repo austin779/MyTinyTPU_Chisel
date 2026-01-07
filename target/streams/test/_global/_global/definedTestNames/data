@@ -1,1 +1,1 @@
-["PETest","MMUTest"]
+["PETest","AccumulatorMemTest","MMUTest","DualWeightFIFOTest","AccumulatorAlignTest"]
