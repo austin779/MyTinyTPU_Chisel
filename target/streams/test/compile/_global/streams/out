@@ -1,10 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/test/scala/test_accumulator_align.scala:9:24: not found: type AccumulatorAlign[0m
-[0m[[0m[31merror[0m] [0m[0m  def initSignals(dut: AccumulatorAlign): Unit = {[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/test/scala/test_accumulator_align.scala:18:14: not found: type AccumulatorAlign[0m
-[0m[[0m[31merror[0m] [0m[0m    test(new AccumulatorAlign).withAnnotations(Seq(WriteVcdAnnotation)) { dut =>[0m
-[0m[[0m[31merror[0m] [0m[0m             ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/test/scala/test_accumulator_align.scala:86:14: not found: type AccumulatorAlign[0m
-[0m[[0m[31merror[0m] [0m[0m    test(new AccumulatorAlign).withAnnotations(Seq(WriteVcdAnnotation)) { dut =>[0m
-[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/test/scala/test_ActivationFunc.scala:18:46: no arguments allowed for nullary constructor ActivationFunc: ()ActivationFunc[0m
+[0m[[0m[31merror[0m] [0m[0m    test(new ActivationFunc(ActivationConfig.ReLU)).withAnnotations(Seq(WriteVcdAnnotation)) { dut =>[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/test/scala/test_ActivationFunc.scala:59:46: no arguments allowed for nullary constructor ActivationFunc: ()ActivationFunc[0m
+[0m[[0m[31merror[0m] [0m[0m    test(new ActivationFunc(ActivationConfig.ReLU6)).withAnnotations(Seq(WriteVcdAnnotation)) { dut =>[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/test/scala/test_ActivationFunc.scala:101:46: no arguments allowed for nullary constructor ActivationFunc: ()ActivationFunc[0m
+[0m[[0m[31merror[0m] [0m[0m    test(new ActivationFunc(ActivationConfig.Passthrough)).withAnnotations(Seq(WriteVcdAnnotation)) { dut =>[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
 [0m[[0m[31merror[0m] [0m[0mthree errors found[0m

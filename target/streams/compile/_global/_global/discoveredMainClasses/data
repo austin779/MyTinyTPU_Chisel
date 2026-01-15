@@ -1,1 +1,1 @@
-["AccumulatorAlignMain","AccumulatorMemMain","DualWeightFIFOMain","MMUMain","PEMain"]
+["DualWeightFIFOMain","MMUMain","NormalizerMain","PEMain"]

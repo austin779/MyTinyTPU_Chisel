@@ -1,6 +1,10 @@
 #Successful Tests
-#Wed Jan 07 06:59:04 CST 2026
+#Thu Jan 15 09:22:27 CST 2026
 AccumulatorMemTest=1767740344327
+AccumulatorSpec=1768427686821
+ActivationPipelineSpec=1768440147872
 AccumulatorAlignTest=1767737764577
-MMUTest=1767724515171
+NormalizerSpec=1768426251883
+ActivationFuncSpec=1768427184277
 DualWeightFIFOTest=1767737824386
+MMUTest=1768425820787

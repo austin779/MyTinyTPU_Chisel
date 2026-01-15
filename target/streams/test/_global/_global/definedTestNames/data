@@ -1,1 +1,1 @@
-["PETest","AccumulatorMemTest","MMUTest","DualWeightFIFOTest","AccumulatorAlignTest"]
+["PETest","AccumulatorMemTest","ActivationPipelineSpec","ActivationFuncSpec","MMUTest","DualWeightFIFOTest","NormalizerSpec","AccumulatorSpec","AccumulatorAlignTest"]
