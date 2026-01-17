@@ -10,12 +10,12 @@ class WeightFifo extends Module {
   })
 
   // Tiny depth FIFO (4 entries)
-  val buffer = Reg(Vec(4, UInt(8.W)))
-  val wr_ptr = RegInit(0.U(2.W))
+  val buffer = Reg(Vec(4, UInt(8.W))) // 4 element for 2x2 weight matrix,each element is 8 bit
+  val wr_ptr = RegInit(0.U(2.W))      // 2 bit write point to the next element that wait for write in fifo
   val rd_ptr = RegInit(0.U(2.W))
   val dataOutReg = RegInit(0.U(8.W))
 
-  io.data_out := dataOutReg
+  io.data_out := dataOutReg	//dff output to wire 'data_out'
 
   when (reset.asBool) {
     wr_ptr     := 0.U

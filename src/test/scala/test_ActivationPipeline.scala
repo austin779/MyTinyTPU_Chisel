@@ -6,14 +6,13 @@ class ActivationPipelineSpec extends AnyFlatSpec with ChiselScalatestTester {
 
   behavior of "Activation Pipeline"
 
-  // Helper function to initialize signals to default state
+  //function ,initialize signals to default state
   def initSignals(c: ActivationPipeline): Unit = {
-    c.io.valid_in.poke(false.B)
-    c.io.acc_in.poke(0.S)
-    c.io.target_in.poke(0.S)
+    c.io.valid_in.poke(false.B) // init false
+    c.io.acc_in.poke(0.S)	//init accumulator input 0
+    c.io.target_in.poke(0.S)	//
     
     // Default Configuration: Passthrough (Mode 0)
-    // Matches Python: dut.activation_mode.value = MODE_PASS
     c.io.activation_mode.poke(0.U) 
     
     // Standard Normalization Config (1.0 gain, no bias)
@@ -59,7 +58,6 @@ class ActivationPipelineSpec extends AnyFlatSpec with ChiselScalatestTester {
       c.io.valid_in.poke(false.B)
       
       // --- FIX: Change step(3) to step(2) ---
-      // We already stepped 1. We need 2 more to complete the 3-cycle pipeline.
       // Cycle 2: Act -> Norm
       // Cycle 3: Norm -> Quant (Output becomes Valid HERE)
       c.clock.step(2) 

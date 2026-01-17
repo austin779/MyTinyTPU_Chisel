@@ -3,11 +3,11 @@ import chisel3.util._
 
 class DualWeightFIFO(val depth: Int = 4, val dataWidth: Int = 8) extends Module {
   val io = IO(new Bundle {
-    // Push Interface (Shared Bus)
+    // Push Interface (Shared Bus),push seperately,pop in the same time
     val push_col0 = Input(Bool())
     val push_col1 = Input(Bool())
     val data_in   = Input(UInt(dataWidth.W))
-
+ 
     // Pop Interface (Shared Pop)
     val pop       = Input(Bool())
     
@@ -69,7 +69,7 @@ class DualWeightFIFO(val depth: Int = 4, val dataWidth: Int = 8) extends Module 
 
   // Column 0: Direct Combinational Read (No Latency)
   // Verilog: assign col0_out = queue0[rd_ptr0];
-  io.col0_out := queue0(rd_ptr0)
+  io.col0_out := queue0(rd_ptr0) 
 
   // Column 1: Registered Output (Skewed)
   io.col1_out := col1_out_reg

@@ -1,16 +1,13 @@
 import chisel3._
 import chisel3.util._
-// --- Main Pipeline Module ---
+
 class ActivationPipeline extends Module {
   val io = IO(new Bundle {
     val valid_in    = Input(Bool())
-    val acc_in      = Input(SInt(32.W))    // From Accumulator
+    val acc_in      = Input(SInt(32.W))    // Input From Accumulator
     val target_in   = Input(SInt(32.W))    // Optional target for loss
 
-    // --- Configuration ---
-    // Note: I added activation_mode here so you can control the ActivationFunc 
-    // we built earlier. If your Verilog activation_func is hardcoded, you can remove this.
-    val activation_mode = Input(UInt(2.W)) 
+    val activation_mode = Input(UInt(2.W)) // select mode :0 for pass ,1 for ReLU, 2 for ReLU6 
 
     val norm_gain   = Input(SInt(16.W))
     val norm_bias   = Input(SInt(32.W))
@@ -34,7 +31,7 @@ class ActivationPipeline extends Module {
   
   u_act.io.valid_in := io.valid_in
   u_act.io.data_in  := io.acc_in
-// --- THE FIX IS HERE ---
+
   u_act.io.mode     := io.activation_mode.asTypeOf(ActivationOp())
   
   val s1_valid = u_act.io.valid_out
