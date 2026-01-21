@@ -32,7 +32,7 @@ class Accumulator extends Module {
   // 4. Wiring: u_align into  u_mem
   // Note: clk and reset are implicitly connected.
   u_mem.io.enable           := u_align.io.aligned_valid // u_align tell mem to send data using valid bit
-  u_mem.io.accumulator_mode := io.accumulator_enable 	// addition :1 , ovverwrite: 0
+  u_mem.io.accumulator_mode := io.accumulator_enable 	// acuumulator tell u_mem,add :1 , overwrite: 0
   u_mem.io.buffer_select    := io.addr_sel		
   u_mem.io.in_col0          := u_align.io.align_col0
   u_mem.io.in_col1          := u_align.io.align_col1

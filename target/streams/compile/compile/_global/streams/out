@@ -1,34 +1,13 @@
-[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/main/scala/MlpTop.scala:79:34: not found: type DualWeightFifo[0m
-[0m[[0m[31merror[0m] [0m[0m  val u_weight_fifo = Module(new DualWeightFifo)[0m
-[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/main/scala/MlpTop.scala:148:12: value en_capture_col0 is not a member of chisel3.Bundle{val en_weight_pass: chisel3.Bool; val en_capture_cols: chisel3.Vec[chisel3.Bool]; val row_in: chisel3.Vec[chisel3.UInt]; val col_in: chisel3.Vec[chisel3.UInt]; val acc_out: chisel3.Vec[chisel3.UInt]}[0m
-[0m[[0m[31merror[0m] [0m[0m  u_mmu.io.en_capture_col0 := en_capture_col0[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/main/scala/MlpTop.scala:149:12: value en_capture_col1 is not a member of chisel3.Bundle{val en_weight_pass: chisel3.Bool; val en_capture_cols: chisel3.Vec[chisel3.Bool]; val row_in: chisel3.Vec[chisel3.UInt]; val col_in: chisel3.Vec[chisel3.UInt]; val acc_out: chisel3.Vec[chisel3.UInt]}[0m
-[0m[[0m[31merror[0m] [0m[0m  u_mmu.io.en_capture_col1 := en_capture_col1[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/main/scala/MlpTop.scala:150:12: value row0_in is not a member of chisel3.Bundle{val en_weight_pass: chisel3.Bool; val en_capture_cols: chisel3.Vec[chisel3.Bool]; val row_in: chisel3.Vec[chisel3.UInt]; val col_in: chisel3.Vec[chisel3.UInt]; val acc_out: chisel3.Vec[chisel3.UInt]}[0m
-[0m[[0m[31merror[0m] [0m[0m  u_mmu.io.row0_in := mmu_row0_in[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/main/scala/MlpTop.scala:151:12: value row1_in is not a member of chisel3.Bundle{val en_weight_pass: chisel3.Bool; val en_capture_cols: chisel3.Vec[chisel3.Bool]; val row_in: chisel3.Vec[chisel3.UInt]; val col_in: chisel3.Vec[chisel3.UInt]; val acc_out: chisel3.Vec[chisel3.UInt]}[0m
-[0m[[0m[31merror[0m] [0m[0m  u_mmu.io.row1_in := mmu_row1_in[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/main/scala/MlpTop.scala:152:12: value col0_in is not a member of chisel3.Bundle{val en_weight_pass: chisel3.Bool; val en_capture_cols: chisel3.Vec[chisel3.Bool]; val row_in: chisel3.Vec[chisel3.UInt]; val col_in: chisel3.Vec[chisel3.UInt]; val acc_out: chisel3.Vec[chisel3.UInt]}[0m
-[0m[[0m[31merror[0m] [0m[0m  u_mmu.io.col0_in := mmu_col0_in[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/main/scala/MlpTop.scala:153:12: value col1_in is not a member of chisel3.Bundle{val en_weight_pass: chisel3.Bool; val en_capture_cols: chisel3.Vec[chisel3.Bool]; val row_in: chisel3.Vec[chisel3.UInt]; val col_in: chisel3.Vec[chisel3.UInt]; val acc_out: chisel3.Vec[chisel3.UInt]}[0m
-[0m[[0m[31merror[0m] [0m[0m  u_mmu.io.col1_in := mmu_col1_in[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/main/scala/MlpTop.scala:155:31: value acc0_out is not a member of chisel3.Bundle{val en_weight_pass: chisel3.Bool; val en_capture_cols: chisel3.Vec[chisel3.Bool]; val row_in: chisel3.Vec[chisel3.UInt]; val col_in: chisel3.Vec[chisel3.UInt]; val acc_out: chisel3.Vec[chisel3.UInt]}[0m
-[0m[[0m[31merror[0m] [0m[0m  io.mmu_acc0_out := u_mmu.io.acc0_out[0m
-[0m[[0m[31merror[0m] [0m[0m                              ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/main/scala/MlpTop.scala:156:31: value acc1_out is not a member of chisel3.Bundle{val en_weight_pass: chisel3.Bool; val en_capture_cols: chisel3.Vec[chisel3.Bool]; val row_in: chisel3.Vec[chisel3.UInt]; val col_in: chisel3.Vec[chisel3.UInt]; val acc_out: chisel3.Vec[chisel3.UInt]}[0m
-[0m[[0m[31merror[0m] [0m[0m  io.mmu_acc1_out := u_mmu.io.acc1_out[0m
-[0m[[0m[31merror[0m] [0m[0m                              ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/main/scala/MlpTop.scala:167:45: value acc0_out is not a member of chisel3.Bundle{val en_weight_pass: chisel3.Bool; val en_capture_cols: chisel3.Vec[chisel3.Bool]; val row_in: chisel3.Vec[chisel3.UInt]; val col_in: chisel3.Vec[chisel3.UInt]; val acc_out: chisel3.Vec[chisel3.UInt]}[0m
-[0m[[0m[31merror[0m] [0m[0m  u_accum.io.mmu_col0_in        := u_mmu.io.acc0_out[0m
-[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/main/scala/MlpTop.scala:168:45: value acc1_out is not a member of chisel3.Bundle{val en_weight_pass: chisel3.Bool; val en_capture_cols: chisel3.Vec[chisel3.Bool]; val row_in: chisel3.Vec[chisel3.UInt]; val col_in: chisel3.Vec[chisel3.UInt]; val acc_out: chisel3.Vec[chisel3.UInt]}[0m
-[0m[[0m[31merror[0m] [0m[0m  u_accum.io.mmu_col1_in        := u_mmu.io.acc1_out[0m
-[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
-[0m[[0m[31merror[0m] [0m[0m11 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/main/scala/mmu_dual_buffer.scala:44:22: value valid_in is not a member of chisel3.Bundle{val en_weight_load: chisel3.Bool; val en_weight_swap: chisel3.Bool; val in_act: chisel3.UInt; val out_act: chisel3.UInt; val in_psum: chisel3.UInt; val out_psum: chisel3.UInt; val in_weight: chisel3.UInt; val out_weight: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m        pes(r)(c).io.valid_in := io.valid_in[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/main/scala/mmu_dual_buffer.scala:46:22: value valid_in is not a member of chisel3.Bundle{val en_weight_load: chisel3.Bool; val en_weight_swap: chisel3.Bool; val in_act: chisel3.UInt; val out_act: chisel3.UInt; val in_psum: chisel3.UInt; val out_psum: chisel3.UInt; val in_weight: chisel3.UInt; val out_weight: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m        pes(r)(c).io.valid_in := pes(r)(c - 1).io.valid_out[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/main/scala/mmu_dual_buffer.scala:46:51: value valid_out is not a member of chisel3.Bundle{val en_weight_load: chisel3.Bool; val en_weight_swap: chisel3.Bool; val in_act: chisel3.UInt; val out_act: chisel3.UInt; val in_psum: chisel3.UInt; val out_psum: chisel3.UInt; val in_weight: chisel3.UInt; val out_weight: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m        pes(r)(c).io.valid_in := pes(r)(c - 1).io.valid_out[0m
+[0m[[0m[31merror[0m] [0m[0m                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/main/scala/mmu_dual_buffer.scala:71:46: value valid_out is not a member of chisel3.Bundle{val en_weight_load: chisel3.Bool; val en_weight_swap: chisel3.Bool; val in_act: chisel3.UInt; val out_act: chisel3.UInt; val in_psum: chisel3.UInt; val out_psum: chisel3.UInt; val in_weight: chisel3.UInt; val out_weight: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m  io.valid_out := pes(rows - 1)(cols - 1).io.valid_out[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m

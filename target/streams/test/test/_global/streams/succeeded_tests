@@ -1,10 +1,15 @@
 #Successful Tests
-#Thu Jan 15 09:22:27 CST 2026
-AccumulatorMemTest=1767740344327
+#Wed Jan 21 09:41:39 CST 2026
 AccumulatorSpec=1768427686821
-ActivationPipelineSpec=1768440147872
-AccumulatorAlignTest=1767737764577
+PE_dual_bufferTest=1768959698855
+MMU_dual_buffer_Test=1768953191850
 NormalizerSpec=1768426251883
 ActivationFuncSpec=1768427184277
+PETest=1768945367692
+AccumulatorMemTest=1767740344327
+PE_double_bufferTest=1768949373543
+PE_DoubleBufferTest=1768949086523
+ActivationPipelineSpec=1768440147872
+AccumulatorAlignTest=1768661477956
 DualWeightFIFOTest=1767737824386
 MMUTest=1768425820787

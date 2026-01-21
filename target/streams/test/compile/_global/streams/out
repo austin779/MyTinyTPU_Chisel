@@ -1,10 +1,49 @@
-[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/test/scala/test_ActivationFunc.scala:18:46: no arguments allowed for nullary constructor ActivationFunc: ()ActivationFunc[0m
-[0m[[0m[31merror[0m] [0m[0m    test(new ActivationFunc(ActivationConfig.ReLU)).withAnnotations(Seq(WriteVcdAnnotation)) { dut =>[0m
-[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/test/scala/test_ActivationFunc.scala:59:46: no arguments allowed for nullary constructor ActivationFunc: ()ActivationFunc[0m
-[0m[[0m[31merror[0m] [0m[0m    test(new ActivationFunc(ActivationConfig.ReLU6)).withAnnotations(Seq(WriteVcdAnnotation)) { dut =>[0m
-[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/test/scala/test_ActivationFunc.scala:101:46: no arguments allowed for nullary constructor ActivationFunc: ()ActivationFunc[0m
-[0m[[0m[31merror[0m] [0m[0m    test(new ActivationFunc(ActivationConfig.Passthrough)).withAnnotations(Seq(WriteVcdAnnotation)) { dut =>[0m
-[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
-[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/test/scala/test_PE_DoubleBufferTest.scala:23:24: overloaded method value poke with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (value: BigInt)Unit <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (value: chisel3.SInt)Unit[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (chisel3.UInt)[0m
+[0m[[0m[31merror[0m] [0m[0m      dut.io.in_weight.poke(3.U)[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/test/scala/test_PE_DoubleBufferTest.scala:37:21: overloaded method value poke with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (value: BigInt)Unit <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (value: chisel3.SInt)Unit[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (chisel3.UInt)[0m
+[0m[[0m[31merror[0m] [0m[0m      dut.io.in_act.poke(4.U)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/test/scala/test_PE_DoubleBufferTest.scala:38:22: overloaded method value poke with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (value: BigInt)Unit <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (value: chisel3.SInt)Unit[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (chisel3.UInt)[0m
+[0m[[0m[31merror[0m] [0m[0m      dut.io.in_psum.poke(10.U)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/test/scala/test_PE_DoubleBufferTest.scala:43:23: overloaded method value expect with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (value: BigInt)Unit <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (value: chisel3.SInt)Unit[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (chisel3.UInt)[0m
+[0m[[0m[31merror[0m] [0m[0m      dut.io.out_psum.expect(22.U)[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/test/scala/test_PE_DoubleBufferTest.scala:48:25: overloaded method value expect with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (value: BigInt)Unit <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (value: chisel3.SInt)Unit[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (chisel3.UInt)[0m
+[0m[[0m[31merror[0m] [0m[0m      dut.io.out_weight.expect(3.U)[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/test/scala/test_PE_DoubleBufferTest.scala:55:21: overloaded method value poke with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (value: BigInt)Unit <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (value: chisel3.SInt)Unit[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (chisel3.UInt)[0m
+[0m[[0m[31merror[0m] [0m[0m      dut.io.in_act.poke(7.U)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/test/scala/test_PE_DoubleBufferTest.scala:56:22: overloaded method value poke with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (value: BigInt)Unit <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (value: chisel3.SInt)Unit[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (chisel3.UInt)[0m
+[0m[[0m[31merror[0m] [0m[0m      dut.io.in_psum.poke(1.U)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/deiwuai/MyTinyTPU/src/test/scala/test_PE_DoubleBufferTest.scala:59:23: overloaded method value expect with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (value: BigInt)Unit <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (value: chisel3.SInt)Unit[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (chisel3.UInt)[0m
+[0m[[0m[31merror[0m] [0m[0m      dut.io.out_psum.expect(22.U)[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m8 errors found[0m

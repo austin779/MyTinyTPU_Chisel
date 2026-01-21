@@ -3,12 +3,12 @@ import chisel3.util._
 
 class AccumulatorAlign extends Module {
   val io = IO(new Bundle {
-    val valid_in      = Input(Bool())
+    val valid_in      = Input(Bool())     //wiring from the top accumulator modeule
     val raw_col0      = Input(UInt(16.W))
     val raw_col1      = Input(UInt(16.W))
 
-    val aligned_valid = Output(Bool())
-    val align_col0    = Output(UInt(16.W))
+    val aligned_valid = Output(Bool())	  //finiish deskew
+    val align_col0    = Output(UInt(16.W))// 
     val align_col1    = Output(UInt(16.W))
   })
 
@@ -37,8 +37,8 @@ class AccumulatorAlign extends Module {
       
       // 1. Output the pair (Old Col0 + New Col1)
       aligned_valid_reg := true.B
-      align_col0_reg    := col0_delay_reg
-      align_col1_reg    := io.raw_col1
+      align_col0_reg    := col0_delay_reg //column 0 must wait a cycle to align the data. so pass through 2 DFF
+      align_col1_reg    := io.raw_col1    // coulumn 1 only pass through 1 DFF
       
       // 2. Capture the current Col0 for the NEXT pair
       col0_delay_reg    := io.raw_col0
